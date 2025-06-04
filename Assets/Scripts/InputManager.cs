@@ -17,8 +17,8 @@ public class InputManager : MonoBehaviour
         {
             effect.gameObject.SetActive(false);
         }
-        judgement = FindObjectOfType<Judgement>();
-        sync = FindObjectOfType<Sync>();
+        judgement = FindAnyObjectByType<Judgement>();
+        sync = FindAnyObjectByType<Sync>();
     }
 
     void Update()
